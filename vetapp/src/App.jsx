@@ -13,7 +13,7 @@ function App() {
     <Header/>
     <NavBar/>
     <Routes>
-      <Route path= "/"element = {<AboutPage/>} />
+      <Route path= "/about"element = {<AboutPage/>} />
       </Routes>
     </>
   )
