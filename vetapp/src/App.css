@@ -20,6 +20,7 @@
 .removeUnderLineLink
 {
   text-decoration: none;
+  color:inherit;
 }
 
 
