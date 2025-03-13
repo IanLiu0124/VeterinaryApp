@@ -6,7 +6,7 @@ const Patient = ({patient}) => {
         <td>{patient.id}</td>
         <td>{patient.name}</td>
         <td>{patient.specie}</td>
-        <td>{patient.weight}</td>
+        <td>{patient.weight} kg</td>
         <td><Link to={`/patient/${patient.id}`}>View</Link></td>
     </tr> );
 }
