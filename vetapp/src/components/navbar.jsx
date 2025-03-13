@@ -10,8 +10,8 @@ function ColorSchemesExample() {
       <br />
       <Navbar variant="tabs" bg="light" data-bs-theme="light">
         <Container>
+        <Nav className="mx-auto">
           <Navbar.Brand as={Link} to="/">Overview</Navbar.Brand>
-          <Nav className="me-auto">
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             
           </Nav>
