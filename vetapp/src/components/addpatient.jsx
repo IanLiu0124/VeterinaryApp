@@ -1,5 +1,5 @@
 const AddPatient = () => {
-    return ( <div className="container-fluid" style={{border:"white solid 1px", padding:"1.3em 1.3em"}}>
+    return ( <div className="col-sm" style={{border:"white solid 1px", padding:"1.3em 1.3em"}}>
         <h5>Add Patient</h5>
         <form>
             <div className="form-row align-items-left">

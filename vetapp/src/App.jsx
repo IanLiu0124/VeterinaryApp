@@ -16,11 +16,12 @@ function App() {
   return (
     <div className="app-background">
     <Header/>
-    
     <NavBar/>
-    <div className="container">
+    <div className="container mt-5">
+      <div className="row">
     <AddPatient/>
     <AddMedication/>
+    </div>
     </div>
     <Routes>
       <Route path= "/"element = {<OverView patients ={patients}/>} />
