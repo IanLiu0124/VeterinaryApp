@@ -10,14 +10,14 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className="app-background">
     <Header/>
     <NavBar/>
     <Routes>
       <Route path= "/"element = {<OverView/>} />
       <Route path= "/about"element = {<AboutPage/>} />
       </Routes>
-    </>
+    </div>
   )
 }
 

@@ -2,18 +2,22 @@ import Table from 'react-bootstrap/Table';
 
 const OverViewPage = () => {
     return (
-        <div style={{ margin: "3em" }}>
+        <div className="container mt-5">
             <h4>Patient List</h4>
-            <Table striped bordered hover>
+            <Table striped bordered hover className="table-dark">
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Species</th>
-                        <th>Weight</th>
-                        <th>Details</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Species</th>
+                        <th scope="col">Weight</th>
+                        <th >Details</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>Frappy</td>
+
+                    </tr>
                     {/* {patients.map((patient) => (
                         <tr key={patient.id}>
                             <td>{patient.name}</td>
