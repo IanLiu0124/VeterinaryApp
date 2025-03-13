@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Metronidazole",
+        "Dosages":[
+            {
+                "speices":"Canine",
+                "dosage_per_kg": 10,
+                "unit":"mg",
+                "frequency":"every 12 hours"
+            }
+        ]
+    }
+]
