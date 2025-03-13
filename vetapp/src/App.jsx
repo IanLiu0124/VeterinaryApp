@@ -7,6 +7,7 @@ import NavBar from './components/navbar'
 import OverView from './components/overviewpage'
 import Patient from './assets/patient.json'
 import AddPatient from './components/addpatient'
+import AddMedication from './components/addmedication'
 
 function App() {
   const [patients, setCount] = useState(Patient)
@@ -17,7 +18,10 @@ function App() {
     <Header/>
     
     <NavBar/>
+    <div className="container">
     <AddPatient/>
+    <AddMedication/>
+    </div>
     <Routes>
       <Route path= "/"element = {<OverView patients ={patients}/>} />
       <Route path= "/about"element = {<AboutPage/>} />

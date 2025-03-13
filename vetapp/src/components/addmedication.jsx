@@ -1,6 +1,6 @@
-const AddPatient = () => {
+const AddMedication = () => {
     return ( <div className="container-fluid" style={{border:"white solid 1px", padding:"1.3em 1.3em"}}>
-        <h5>Add Patient</h5>
+        <h5>Add Medication</h5>
         <form>
             <div className="form-row align-items-left">
                 <div className="col">   
@@ -22,4 +22,4 @@ const AddPatient = () => {
     </div> );
 }
  
-export default AddPatient;
+export default AddMedication;
