@@ -5,16 +5,19 @@ import {Route, Routes} from "react-router-dom"
 import AboutPage from './components/aboutpage'
 import NavBar from './components/navbar'
 import OverView from './components/overviewpage'
-import patient from './assets/patient.json'
+import Patient from './assets/patient.json'
+import AddPatient from './components/addpatient'
 
 function App() {
-  const [patients, setCount] = useState(patient)
+  const [patients, setCount] = useState(Patient)
   console.log(patients);
 
   return (
     <div className="app-background">
     <Header/>
+    
     <NavBar/>
+    <AddPatient/>
     <Routes>
       <Route path= "/"element = {<OverView patients ={patients}/>} />
       <Route path= "/about"element = {<AboutPage/>} />
