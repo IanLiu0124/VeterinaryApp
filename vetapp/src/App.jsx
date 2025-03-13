@@ -8,7 +8,7 @@ import OverView from './components/overviewpage'
 import patient from './assets/patient.json'
 
 function App() {
-  const [paitents, setCount] = useState(patient)
+  const [patients, setCount] = useState(patient)
   console.log(patients);
 
   return (
@@ -16,7 +16,7 @@ function App() {
     <Header/>
     <NavBar/>
     <Routes>
-      <Route path= "/"element = {<OverView/>} />
+      <Route path= "/"element = {<OverView patients ={patients}/>} />
       <Route path= "/about"element = {<AboutPage/>} />
       </Routes>
     </div>
