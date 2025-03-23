@@ -13,6 +13,7 @@ const OverViewPage = ({patients}) => {
                         <th scope="col">Species</th>
                         <th scope="col">Weight</th>
                         <th >Details</th>
+                        <th>Remove</th>
                     </tr>
                 </thead>
                 <tbody>
