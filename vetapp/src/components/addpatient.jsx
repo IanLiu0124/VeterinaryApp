@@ -4,11 +4,11 @@ const AddPatient = () => {
         <form>
             <div className="form-row align-items-left">
                 <div className="col">   
-        <label for="name">Name: </label>
+        <label htmlFor="name">Name: </label>
         <input className="form-control-sm" type="text" id="name" name="inputName"></input>
         </div>
         <div className="col">
-        <label for="weight">Weight: </label>
+        <label htmlFor="weight">Weight: </label>
         <input className="form-control-sm" type="number" id="weight" name="weight" placeholder="kg"></input>
         </div>
         <div className="col">

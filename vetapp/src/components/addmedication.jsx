@@ -5,7 +5,7 @@ const AddMedication = () => {
             {/* <div className="form-row"> */}
                 <div className="form-group row">   
         <label for="drugName" className="col-sm-2 col-form-label">Name: </label>
-        <div class="col-sm-2 mb-4">
+        <div className="col-sm-2 mb-4">
         <input className="form-control-sm" type="text" id="name" name="inputName"></input>
         </div>
         </div>
