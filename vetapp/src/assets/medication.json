@@ -1,7 +1,8 @@
 [
     {
-        "name": "Metronidazole 250mg",
-        "description":"",
+        "name": "Metronidazole",
+        "form":"Tablet",
+        "concentration":"250mg",
         "dosages":
             {
                 "speices":"Canine",
@@ -11,17 +12,19 @@
     },
     {
         "name": "Butorphanol",
-        "description":"",
+        "form":"Injectable",
+        "concentration":"10mg/ml",
         "dosages":
             {
                 "speices":"Canine",
                 "dosage_per_kg": 10,
-                "unit":"mg"
+                "unit":"ml"
             }
     },
     {
         "name": "Ketamine",
-        "description":"",
+        "form":"Injectable",
+        "concentration":"0.5mg/ml",
         "dosages":
             {
                 "speices":"Canine",
@@ -31,12 +34,20 @@
     },
     {
         "name": "Dexmedetomidine",
-        "description":"",
+        "form":"Injectable",
+        "concentration":"0.01mg/ml",
         "dosages":
             {
-                "speices":"Canine",
-                "dosage_per_kg": 10,
+                "Canine":
+                {
+                "dosage_per_kg": 10
+                },
+                "Feline":
+                {
+                    "dosage_per_kg": 10
+                },
                 "unit":"mg"
+
             }  
     }
     

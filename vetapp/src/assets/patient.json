@@ -1,12 +1,12 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "name": "Max",
         "weight": 6,
         "specie": "Feline"
     },
     {
-        "id": 2,
+        "id": "2",
         "name":"Frappy",
         "weight": 10,
         "specie": "Canine"

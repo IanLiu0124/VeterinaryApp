@@ -9,7 +9,7 @@ const OverViewPage = ({patients, removeBtn=f=>f}) => {
             <Table striped bordered hover className="table-dark">
                 <thead>
                     <tr>
-                        <th scope='col'>ID</th>
+                        {/* <th scope='col'>ID</th> */}
                         <th scope="col">Name</th>
                         <th scope="col">Species</th>
                         <th scope="col">Weight</th>

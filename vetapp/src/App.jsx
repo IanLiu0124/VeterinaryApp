@@ -9,7 +9,7 @@ import Patient from './assets/patient.json';
 import AddPatient from './components/addpatient';
 import AddMedication from './components/addmedication';
 import PatientPage from './components/patientpage';
-// import v4 from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
   const [patients, setPatient] = useState(Patient)
@@ -28,7 +28,7 @@ function App() {
   {
     const newPatient =
     {
-      id: v4(),
+      id: uuidv4(),
       name,
       weight: parseFloat(weight),
       specie

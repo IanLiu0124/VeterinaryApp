@@ -3,7 +3,7 @@ import { useState } from 'react';
 const AddPatient = ({addPatient = (p)=> p}) => {
     const [name, setName] = useState("");
     const [weight, setWeight] = useState(0);
-    const [specie, setSpecie] = useState("");
+    const [specie, setSpecie] = useState("Feline");
 
     const submitData = (e) =>
     {
@@ -11,7 +11,7 @@ const AddPatient = ({addPatient = (p)=> p}) => {
         addPatient(name, weight, specie);
         setName("");
         setWeight(0);
-        setSpecie("");
+        setSpecie("Feline");
 
     }
 
