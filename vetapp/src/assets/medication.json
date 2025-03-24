@@ -8,5 +8,37 @@
                 "dosage_per_kg": 10,
                 "unit":"mg"
             }
+    },
+    {
+        "name": "Butorphanol",
+        "description":"",
+        "dosages":
+            {
+                "speices":"Canine",
+                "dosage_per_kg": 10,
+                "unit":"mg"
+            }
+    },
+    {
+        "name": "Ketamine",
+        "description":"",
+        "dosages":
+            {
+                "speices":"Canine",
+                "dosage_per_kg": 10,
+                "unit":"mg"
+            }
+    },
+    {
+        "name": "Dexmedetomidine",
+        "description":"",
+        "dosages":
+            {
+                "speices":"Canine",
+                "dosage_per_kg": 10,
+                "unit":"mg"
+            }  
     }
+    
+    
 ]

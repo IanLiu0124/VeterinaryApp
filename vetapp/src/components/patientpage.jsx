@@ -56,6 +56,9 @@ const PatientPage = ({patients}) => {
                         Description
                     </th>
                     <th>
+                        Form and Concentration
+                    </th>
+                    <th>
                         Dosage
                     </th>
                 </tr>

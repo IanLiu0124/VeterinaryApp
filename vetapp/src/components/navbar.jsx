@@ -13,7 +13,8 @@ function ColorSchemesExample() {
         <Nav className="mx-auto">
           <Navbar.Brand as={Link} to="/">Overview</Navbar.Brand>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
-            
+            <Nav.Link as={Link} to="/addpatient">Add Patient</Nav.Link>
+            <Nav.Link as={Link} to="/addmedication">Add Medication</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

@@ -1,3 +1,4 @@
+import Button from 'react-bootstrap/Button'
 const AddMedication = () => {
     return ( <div className="col-sm" style={{border:"white solid 1px", padding:"1.3em 1.3em"}}>
         <h5>Add Medication</h5>
@@ -30,6 +31,9 @@ const AddMedication = () => {
             <option>mg</option>
         </select>
         </div>
+        <div className="d-grid gap-2 container mt-5">
+    <Button variant="outline-light" size="lg">Add</Button>
+    </div>
         {/* </div> */}
     </form>
     </div> );
