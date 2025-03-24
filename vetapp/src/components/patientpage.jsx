@@ -2,10 +2,11 @@ import Table from 'react-bootstrap/Table';
 import {useParams} from 'react-router-dom';
 import Stack from 'react-bootstrap/Stack';
 import { useState } from 'react';
-import MedList from '../assets/medication.json'
+import MedList from '../assets/medication.json';
+import Medication from './medication';
 
 const PatientPage = ({patients}) => {
-    const [medication, setMedication] = useState(MedList)
+    const [medications, setMedication] = useState(MedList)
     const {id} = useParams();
     const patient = patients.find( (patient) => 
     {
@@ -46,6 +47,7 @@ const PatientPage = ({patients}) => {
         <div className='container mt-4'>
             <h4>Medication</h4>
             <Table striped bordered hover className="table-dark">
+                <thead>
                 <tr>
                     <th scope='col1'>
                         Medication Name
@@ -57,7 +59,12 @@ const PatientPage = ({patients}) => {
                         Dosage
                     </th>
                 </tr>
+                </thead>
                 <tbody>
+                    {medications.map((med)=>
+                    (
+                        <Medication key = {med.name} medication = {med} weight = {patient.weight}/>
+                    ))}
                 </tbody>
             </Table>
 

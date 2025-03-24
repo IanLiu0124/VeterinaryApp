@@ -1,13 +1,12 @@
 [
     {
-        "name": "Metronidazole",
-        "unit": "10mg/ml",
+        "name": "Metronidazole 250mg",
         "description":"",
-        "dosages":[
+        "dosages":
             {
                 "speices":"Canine",
-                "dosage_per_kg": 10
+                "dosage_per_kg": 10,
+                "unit":"mg"
             }
-        ]
     }
 ]

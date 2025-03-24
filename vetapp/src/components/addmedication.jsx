@@ -4,7 +4,7 @@ const AddMedication = () => {
         <form>
             {/* <div className="form-row"> */}
                 <div className="form-group row">   
-        <label for="drugName" className="col-sm-2 col-form-label">Name: </label>
+        <label htmlFor="drugName" className="col-sm-2 col-form-label">Name: </label>
         <div className="col-sm-2 mb-4">
         <input className="form-control-sm" type="text" id="name" name="inputName"></input>
         </div>
@@ -13,15 +13,15 @@ const AddMedication = () => {
         <div className="form-check">
             
             <input type="checkbox" className="form-check-input" name="canineDrug" id="canineDrug"></input>
-            <label for="canineDrug" className="form-check-label">Canine</label>
+            <label htmlFor="canineDrug" className="form-check-label">Canine</label>
             </div>
             <div className="form-check">
             <input className="form-check-input "  type="checkbox" name="felineDrug" id="felineDrug"></input>
-            <label for="felineDrug" className="form-check-label">Feline</label>
+            <label htmlFor="felineDrug" className="form-check-label">Feline</label>
             </div>
             </div>
             <div className="row mb-3">
-        <label for="drugDosage">Dosage per Kg: </label>
+        <label htmlFor="drugDosage">Dosage per Kg: </label>
         <input className="form-control-sm" type="number" id="weight" name="weight" placeholder="kg"></input>
         </div>
         <div className="row">

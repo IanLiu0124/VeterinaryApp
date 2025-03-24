@@ -11,7 +11,7 @@ const Patient = ({patient, removeBtn = p =>p}) => {
         <td><Link to={`/patient/${patient.id}`} className='removeUnderLineLink'> {patient.specie}</Link></td>
         <td><Link to={`/patient/${patient.id}`} className='removeUnderLineLink'>{patient.weight} kg</Link></td>
         <td><Link to={`/patient/${patient.id}`} className='removeUnderLineLink'>View</Link></td>
-        <td className='removeUnderLineLink'><Button variant='dark' onClick ={()=>removeBtn(patient.id)}><i class="bi bi-x-octagon"></i></Button></td>
+        <td className='removeUnderLineLink'><Button variant='dark' onClick ={()=>removeBtn(patient.id)}><i className="bi bi-x-octagon"></i></Button></td>
     </tr>
     // </Link> 
 );
