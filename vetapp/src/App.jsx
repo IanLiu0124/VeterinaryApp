@@ -11,8 +11,17 @@ import AddMedication from './components/addmedication'
 import PatientPage from './components/patientpage'
 
 function App() {
-  const [patients, setCount] = useState(Patient)
+  const [patients, setPatient] = useState(Patient)
   console.log(patients);
+
+  const removeBtn = (id) =>
+  {
+    const newPatientList = patients.filter((patient) =>
+    {
+      return patient.id!==id
+    })
+    setPatient(newPatientList);
+  }
 
   return (
     <div className="app-background">
@@ -25,7 +34,7 @@ function App() {
     </div>
     </div>
     <Routes>
-      <Route path= "/"element = {<OverView patients ={patients}/>} />
+      <Route path= "/"element = {<OverView patients ={patients} removeBtn = {removeBtn}/>} />
       <Route path= "/about"element = {<AboutPage/>} />
       <Route path="/patient/:id" element= {<PatientPage patients={patients}/>}/>
       </Routes>

@@ -1,7 +1,8 @@
 import Table from 'react-bootstrap/Table';
 import Patient from './patient';
 
-const OverViewPage = ({patients}) => {
+
+const OverViewPage = ({patients, removeBtn=f=>f}) => {
     return (
         <div className="container mt-5">
             <h4>Patient List</h4>
@@ -18,7 +19,7 @@ const OverViewPage = ({patients}) => {
                 </thead>
                 <tbody>
                     {patients.map((patient) => (
-                        <Patient key = {patient.id} patient={patient}/>
+                        <Patient key = {patient.id} patient={patient} removeBtn = {removeBtn}/>
                     ))}
                 </tbody>
             </Table>
