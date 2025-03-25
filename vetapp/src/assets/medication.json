@@ -17,7 +17,7 @@
         "dosages":
             {
                 "speices":"Canine",
-                "dosage_per_kg": 10,
+                "dosage_per_kg": 5,
                 "unit":"ml"
             }
     },
@@ -28,7 +28,7 @@
         "dosages":
             {
                 "speices":"Canine",
-                "dosage_per_kg": 10,
+                "dosage_per_kg": 0.7,
                 "unit":"mg"
             }
     },
@@ -40,7 +40,7 @@
             {
                 "Canine":
                 {
-                "dosage_per_kg": 10
+                "dosage_per_kg": 9
                 },
                 "Feline":
                 {

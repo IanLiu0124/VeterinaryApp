@@ -1,9 +1,11 @@
 import Button from 'react-bootstrap/Button'
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 const AddPatient = ({addPatient = (p)=> p}) => {
     const [name, setName] = useState("");
     const [weight, setWeight] = useState(0);
     const [specie, setSpecie] = useState("Feline");
+    const navigate = useNavigate();
 
     const submitData = (e) =>
     {
@@ -12,6 +14,8 @@ const AddPatient = ({addPatient = (p)=> p}) => {
         setName("");
         setWeight(0);
         setSpecie("Feline");
+        navigate("/overview");
+    
 
     }
 
