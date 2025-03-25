@@ -14,7 +14,7 @@ const AddPatient = ({addPatient = (p)=> p}) => {
         setName("");
         setWeight(0);
         setSpecie("Feline");
-        navigate("/overview");
+        navigate("/");
     
 
     }
