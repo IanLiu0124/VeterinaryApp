@@ -4,22 +4,29 @@
         "form":"Tablet",
         "concentration":"250mg",
         "dosages":
+        {
+            "Canine":
             {
-                "speices":"Canine",
-                "dosage_per_kg": 10,
-                "unit":"mg"
-            }
+                "dosage_per_kg": 0.7
+            },
+            "unit":"mg"
+        }
     },
     {
         "name": "Butorphanol",
         "form":"Injectable",
         "concentration":"10mg/ml",
         "dosages":
+        {
+            "Canine":
             {
-                "speices":"Canine",
-                "dosage_per_kg": 5,
-                "unit":"ml"
-            }
+                "dosage_per_kg": 0.7
+            },
+            "Feline":{
+                "dosage_per_kg": 0.7
+            },
+            "unit":"mg"
+        }
     },
     {
         "name": "Ketamine",
@@ -27,8 +34,13 @@
         "concentration":"0.5mg/ml",
         "dosages":
             {
-                "speices":"Canine",
-                "dosage_per_kg": 0.7,
+                "Canine":
+                {
+                    "dosage_per_kg": 0.7
+                },
+                "Feline":{
+                    "dosage_per_kg": 0.7
+                },
                 "unit":"mg"
             }
     },

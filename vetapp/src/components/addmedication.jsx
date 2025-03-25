@@ -32,7 +32,7 @@ const AddMedication = () => {
         </select>
         </div>
         <div className="d-grid gap-2 container mt-5">
-    <Button variant="outline-light" size="lg">Add</Button>
+    <Button type="submit" variant="outline-light" size="lg">Add</Button>
     </div>
         {/* </div> */}
     </form>

@@ -54,10 +54,20 @@ const PatientPage = ({patients}) => {
                 </tr>
                 </thead>
                 <tbody>
-                    {medications.map((med)=>
-                    (
-                        <Medication key = {med.name} medication = {med} weight = {patient.weight} removeMedBtn = {removeMedBtn}/>
-                    ))}
+                {medications.map((med) => {
+                    if (med.dosages[patient.specie]) {
+                    return (
+                        <Medication
+                        key={med.name}
+                        medication={med}
+                        weight={patient.weight}
+                        removeMedBtn={removeMedBtn}
+                        specie={patient.specie}
+                        />
+                    );
+                    }
+                    return null;
+                })}
                 </tbody>
             </Table>
 

@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button'
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 const Patient = ({patient, removeBtn = p =>p}) => {
+    
     return ( 
     // <Link to={`/patient/${patient.id}`}>
     <tr>
