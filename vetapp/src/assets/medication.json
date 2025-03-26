@@ -96,6 +96,17 @@
             },
             "unit": "ml"
         }
+    },
+    {
+        "name":"Meloxicam",
+        "form":"Injectable",
+        "concentration":"1.5mg/ml",
+        "dosages":{
+            "Canine":{
+                "dosage_per_kg":0.04
+            },
+            "unit":"ml"
+        }
     }
     
     
