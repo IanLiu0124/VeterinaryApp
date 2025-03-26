@@ -29,8 +29,8 @@ const AddPatient = ({addPatient = (p)=> p}) => {
         </div>
         <div className="col">
         <label htmlFor="weight">Weight: </label>
-        <input className="form-control-sm" type="number" id="weight" name="weight" placeholder="kg" value={weight} onChange={(e)=>setWeight(e.target.value)}></input>
-        </div>
+        <input className="form-control-sm" type="number" id="weight" name="weight" placeholder="kg" value={weight} onChange={(e)=>setWeight(e.target.value)} style={{marginRight:'0.5em'}}></input>
+        kg</div>
         <div className="col">
 
         <select className="form-control-sm" name="specie" value={specie} onChange={(e)=>setSpecie(e.target.value)}>
