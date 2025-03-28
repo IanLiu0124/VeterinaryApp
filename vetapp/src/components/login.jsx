@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import InputField from './inputField';
 
-const Login = () => {
+const Login = ({setAuthentication = (p) => p}) => {
     const [user,setUser] = useState('');
     const [password,setPassword] = useState('');
     const navigate = useNavigate();
@@ -17,7 +17,7 @@ const Login = () => {
         // Check if user and password match hard-coded credentials
         if (user === hardCodedUser && password === hardCodedPassword) {
             alert("Login successful!");
-            navigate('/home'); // Redirect to home page after successful login
+            setAuthentication((prev)=>true);
         } else {
             alert("Login failed! Invalid credentials.");
         }

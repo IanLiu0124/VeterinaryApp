@@ -10,9 +10,12 @@ import AddPatient from './components/addpatient';
 import AddMedication from './components/addmedication';
 import PatientPage from './components/patientpage';
 import { v4 as uuidv4 } from 'uuid';
+import Login from './components/login';
+
 
 function App() {
-  const [patients, setPatient] = useState(Patient)
+  const [patients, setPatient] = useState(Patient);
+  const [authenticated, setAuthentication] = useState(false);
   // console.log(patients);
 
   const removeBtn = (id) =>
@@ -38,15 +41,33 @@ function App() {
 
   return (
     <div className="app-background">
-    <Header/>
-    <NavBar/>
+    {authenticated ? <><Header/><NavBar/></> : null}
+    {/* <Header/>
+    <NavBar/> */}
+{/*     
     <Routes>
+    {!authenticated ? (<Route path="*" element = {<Login setAuthentication ={setAuthentication}/>}/>) :
       <Route path="/addpatient" element = {<AddPatient addPatient = {addPatient}/>} />
       <Route path="/addmedication" element = {<AddMedication/>} />
       <Route path= "/"element = {<OverView patients ={patients} removeBtn = {removeBtn}/>} />
       <Route path= "/about"element = {<AboutPage/>} />
       <Route path="/patient/:id" element= {<PatientPage patients={patients}/>}/>
-      </Routes>
+    )}
+      </Routes> */}
+    
+      <Routes>
+  {!authenticated ? (
+    <Route path="*" element={<Login setAuthentication={setAuthentication} />} />
+  ) : (
+    <>
+      <Route path="/addpatient" element={<AddPatient addPatient={addPatient} />} />
+      <Route path="/addmedication" element={<AddMedication />} />
+      <Route path="/" element={<OverView patients={patients} removeBtn={removeBtn} />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/patient/:id" element={<PatientPage patients={patients} />} />
+    </>
+  )}
+</Routes>
     </div>
   )
 }
