@@ -40,12 +40,6 @@ function App() {
     <div className="app-background">
     <Header/>
     <NavBar/>
-    <div className="container mt-5">
-      {/* <div className="row">
-    <AddPatient/>
-    <AddMedication/>
-    </div> */}
-    </div>
     <Routes>
       <Route path="/addpatient" element = {<AddPatient addPatient = {addPatient}/>} />
       <Route path="/addmedication" element = {<AddMedication/>} />
