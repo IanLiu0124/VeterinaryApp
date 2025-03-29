@@ -2,110 +2,139 @@
     {
         "name": "Atropine",
         "form":"Injectable",
-        "concentration":"1mg/ml",
+        "concentration":
+        {
+            "unit":"ml",
+            "per_unit":1
+        },
         "dosages":
         {
             "Canine":
             {
-                "dosage_per_kg": 0.01
+                "unit_per_kg": 0.01
             },
             "Feline":{
-                "dosage_per_kg": 0.01
+                "unit_per_kg": 0.01
             },
-            "unit":"ml"
+            "unit":"mg"
         }
     },
      
     {
         "name": "Epinephrine",
         "form":"Injectable",
-        "concentration":"1 mg/ml",
+        "concentration":
+        {
+            "unit":"ml",
+            "per_unit":1
+        },
         "dosages":
             {
                 "Canine":
                 {
-                "dosage_per_kg": 0.01
+                "unit_per_kg": 0.01
                 },
                 "Feline":
                 {
-                    "dosage_per_kg": 0.01
+                    "unit_per_kg": 0.01
                 },
-                "unit":"ml"
+                "unit":"mg"
 
             }  
     },
     {
         "name": "Naloxone",
         "form":"Injectable",
-        "concentration":"0.4mg/ml",
+        "concentration":
+        {
+            "unit":"ml",
+            "per_unit":0.4
+        },
         "dosages":
         {
             "Canine":
             {
-                "dosage_per_kg": 0.04
+                "unit_per_kg": 0.04
             },
             "Feline":{
-                "dosage_per_kg": 0.04
+                "unit_per_kg": 0.04
             },
-            "unit":"ml"
+            "unit":"mg"
         }
     },
     {
         "name": "Diazepam",
         "form":"Injectable",
-        "concentration":"5mg/ml",
+        "concentration":
+        {
+            "unit":"ml",
+            "per_unit":5
+        },
         "dosages":
             {
                 "Canine":
                 {
-                    "dosage_per_kg": 0.5
+                    "unit_per_kg": 0.5
                 },
                 "Feline":{
-                    "dosage_per_kg": 0.5
+                    "unit_per_kg": 0.5
                 },
-                "unit":"ml"
+                "unit":"mg"
             }
     },
 
        {
         "name": "Glycopyrrolate",
         "form":"Injectable",
-        "concentration":"0.2mg/ml",
+        "concentration":
+        {
+            "unit":"ml",
+            "per_unit":0.2
+        },
         "dosages":
             {
                 "Canine":
                 {
-                "dosage_per_kg": 0.01
+                "unit_per_kg": 0.01
                 },
                 "Feline":
                 {
-                    "dosage_per_kg": 0.01
+                    "unit_per_kg": 0.01
                 },
-                "unit":"ml"
+                "unit":"mg"
 
             }  
     },
     {
         "name": "Onsior",
         "form":"Injectable",
-        "concentration":"20mg/ml",
+        "concentration":
+        {
+            "unit":"ml",
+            "per_unit":"20"
+        },
         "dosages":
         {
             "Feline":{
-                "dosage_per_kg": 0.1
+                "unit_per_kg": 0.1
             },
-            "unit": "ml"
+            "unit": "mg"
         }
     },
     {
         "name":"Meloxicam",
         "form":"Injectable",
-        "concentration":"1.5mg/ml",
+        "concentration":
+        {
+            "unit":"mg",
+            "per_unit":5   
+        },
         "dosages":{
-            "Canine":{
-                "dosage_per_kg":0.04
+            "Canine":
+            {
+                "unit_per_kg":0.2
             },
-            "unit":"ml"
+                "unit":"mg"
         }
     }
     
