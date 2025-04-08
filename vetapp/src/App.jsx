@@ -38,7 +38,6 @@ function App() {
     };
     setPatient([...patients, newPatient]);
   }
-
   return (
     <div className="app-background">
     {authenticated ? <><Header/><NavBar/></> : null}
@@ -61,7 +60,7 @@ function App() {
   ) : (
     <>
       <Route path="/addpatient" element={<AddPatient addPatient={addPatient} />} />
-      <Route path="/addmedication" element={<AddMedication />} />
+      {/* <Route path="/addmedication" element={<AddMedication />} /> */}
       <Route path="/" element={<OverView patients={patients} removeBtn={removeBtn} />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/patient/:id" element={<PatientPage patients={patients} />} />

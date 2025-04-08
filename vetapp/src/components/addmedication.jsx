@@ -1,5 +1,10 @@
 import Button from 'react-bootstrap/Button'
+import { useState } from 'react';
 const AddMedication = () => {
+    const [name, setName] = useState("");
+    const [weight, setDescription] = useState(0);
+    const [specie, setSpecie] = useState("Feline");
+
     return ( <div className="col-sm" style={{border:"white solid 1px", padding:"1.3em 1.3em"}}>
         <h5>Add Medication</h5>
         <form>
